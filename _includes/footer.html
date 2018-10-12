@@ -1,0 +1,16 @@
+<!-- Footer -->
+<footer id="footer">
+
+    <!-- Icons -->
+        <ul class="icons">
+            {% for link in site.footer.social_links %}
+                <li><a href="{{ link.link_url }}" class="icon {{ link.icon }}"><span class="label">{{ link.title }}</span></a></li>
+            {% endfor %}
+        </ul>
+
+    <!-- Menu -->
+        <ul class="menu">
+            <li>&copy; {{ site.title }}</li>
+        </ul>
+
+</footer>

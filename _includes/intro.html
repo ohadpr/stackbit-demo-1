@@ -1,0 +1,14 @@
+<!-- Intro -->
+<section id="{{ include.section.element_id }}" class="main style1 dark fullscreen">
+    <div class="content">
+        <header>
+            <h2>{{ include.section.display_title }}</h2>
+        </header>
+        <p>{{ include.section.content | newline_to_br }}</p>
+        {% if include.section.next_element_id %}
+            <footer>
+                <a href="#{{ include.section.next_element_id }}" class="button style2 down">More</a>
+            </footer>
+        {% endif %}
+    </div>
+</section>

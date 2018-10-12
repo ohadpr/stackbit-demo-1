@@ -1,0 +1,23 @@
+title: Big Picture
+baseurl: /
+footer:
+  social_links:
+    - title: Twitter
+      icon: fa-twitter
+      link_url: '#'
+    - title: Facebook
+      icon: fa-facebook
+      link_url: '#'
+    - title: Instagram
+      icon: fa-instagram
+      link_url: '#'
+    - title: LinkedIn
+      icon: fa-linkedin
+      link_url: '#'
+    - title: Dribbble
+      icon: fa-dribbble
+      link_url: '#'
+    - title: Pinterest
+      icon: fa-pinterest
+      link_url: '#'
+permalink: '/posts/:slug:output_ext'

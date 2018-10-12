@@ -1,0 +1,11 @@
+<section id="{{ include.section.element_id }}" class="main style2 {{ include.section.side }} dark fullscreen">
+    <div class="content box style2">
+        <header>
+            <h2>{{ include.section.title }}</h2>
+        </header>
+        <p>{{ include.section.content }}</p>
+    </div>
+    {% if include.section.next_element_id %}
+        <a href="#{{ include.section.next_element_id }}" class="button style2 down anchored">Next</a>
+    {% endif %}
+</section>

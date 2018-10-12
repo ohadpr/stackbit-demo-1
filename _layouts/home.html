@@ -1,0 +1,9 @@
+---
+layout: body
+---
+
+    {% include header.html %}
+    {% for section in page.sections %}
+        
+        {% include {{ section.component }} section=section %}
+    {% endfor %}

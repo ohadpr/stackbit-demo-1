@@ -1,0 +1,11 @@
+{% if include.section.gallery %}
+    <!-- Gallery -->
+    <div class="gallery">
+        
+        {% for item in include.section.gallery %}
+            <article class="{% cycle 'from-left', 'from-right' %}">
+                <a href="{{ item.full_image | relative_url }}" class="image fit"><img src="{{ item.thumb_image | relative_url }}" title="{{ item.title }}" alt="" /></a>
+            </article>
+        {% endfor %}
+    </div>
+{% endif %}
