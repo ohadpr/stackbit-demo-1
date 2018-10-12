@@ -4,39 +4,38 @@ hide_body: true
 is_partial: true
 display_field: title
 fields:
-  - type: text
-    name: next_element_id
-    label: Next Section ID
-    description: >-
-      The section ID of the section that will be scrolled to when the "Next"
-      button is clicked
-  - type: text
-    name: element_id
-    label: Section ID
-    description: The section ID must be unique among all home sections
-  - type: text
-    name: title
-    label: Title
-    description: Title of the section link shown in the navigation bar
-    config:
-      required: true
-  - type: select
-    name: side
-    label: Side
-    config:
-      required: true
-      source:
-        type: custom
-      options:
-        - left
-        - right
-  - type: text
-    name: component
-    label: Component
-    hidden: true
-    default: content_box.html
-    config:
-      required: true
-  - type: textarea
-    name: content
-    label: Text
+- type: text
+  name: next_element_id
+  label: Next Section ID
+  description: The section ID of the section that will be scrolled to when the "Next"
+    button is clicked
+- type: text
+  name: element_id
+  label: Section ID
+  description: The section ID must be unique among all home sections
+- type: text
+  name: title
+  label: Title
+  description: Title of the section link shown in the navigation bar
+  config:
+    required: true
+- type: select
+  name: side
+  label: Side
+  config:
+    required: true
+    source:
+      type: custom
+    options:
+    - left
+    - right
+- type: text
+  name: component
+  label: Component
+  hidden: true
+  default: content_box.html
+  config:
+    required: true
+- type: textarea
+  name: content
+  label: Text
